@@ -66,6 +66,42 @@ This project is an Arduino sketch for ESP32 microcontrollers. It creates a web s
 - If there's an error mounting the SPIFFS, an error message is displayed.
 - The loop function continuously runs, allowing for additional functionality to be added if needed.
 
+## ESP32 File Downloader (Python Script)
+
+This Python script is designed to download files stored on an ESP32 microcontroller's SPIFFS (SPI Flash File System) to a Raspberry Pi (or any other computer).
+
+### Requirements
+
+- Python 3.x
+- `requests` library
+
+### Usage
+
+1. **Update ESP32 IP Address:**
+   - Replace `"insert_ip_address_for_esp32"` with the actual IP address of your ESP32.
+
+2. **Run the Script:**
+   - Open a terminal or command prompt.
+   - Navigate to the directory where the script is saved.
+   - Run the script by executing:
+     ```
+     python esp32_file_downloader.py
+     ```
+
+3. **Download Files:**
+   - The script will retrieve the list of files stored on the ESP32's SPIFFS.
+   - It will then download each file to the same directory where the script is located.
+
+### Functionality
+
+- The script sends an HTTP GET request to the ESP32 to retrieve the list of files stored on its SPIFFS.
+- It then iterates through the list of files and downloads each file one by one.
+- The downloaded files are saved in the same directory where the script is located.
+
+### Note
+
+- Before running the script, ensure that the ESP32 is connected to the same network as the computer running the script, and replace `"insert_ip_address_for_esp32"` with the actual IP address of the ESP32.
+
 ### License
 
-This project is licensed under the [MIT License](LICENSE).
+This script is provided under the [MIT License](LICENSE).
