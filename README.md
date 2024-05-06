@@ -46,6 +46,19 @@ This project is an Arduino sketch for ESP32 microcontrollers. It creates a web s
    - In the address bar, enter the IP address printed by the ESP32 followed by `/files` (e.g., `http://192.168.1.100/files`).
    - Press Enter to view the list of files stored on the ESP32's SPIFFS.
 
+3. **Using as an Access Point:**
+   - If you want to use the ESP32 as an access point, uncomment the following lines in the sketch:
+     ```cpp
+     /*
+     WiFi.softAP(ssid, password);
+     IPAddress IP = WiFi.softAPIP();
+     Serial.print("AP IP address: ");
+     Serial.println(IP);
+     */
+     ```
+   - Comment out or remove the lines related to connecting to a WiFi network.
+   - This will enable the ESP32 to create its own WiFi network with the specified SSID and password, and you can connect to it directly.
+
 ### Functionality
 
 - The web server responds to HTTP GET requests to the `/files` endpoint.
