@@ -105,4 +105,4 @@ This Python script is designed to download files stored on an ESP32 microcontrol
 
 ### License
 
-This script is provided under the [MIT License](LICENSE).
+This script is provided under the [MIT License](LICENSE.md).
