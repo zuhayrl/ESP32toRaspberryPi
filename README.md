@@ -18,8 +18,9 @@ This project is an Arduino sketch for ESP32 microcontrollers. It creates a web s
    - Open Arduino IDE.
    - Go to `Sketch` > `Include Library` > `Manage Libraries...`
    - Search for and install:
-     - `ESPAsyncWebServer` library by `me-no-dev`
+     - `ESPAsyncWebServer` library by `lacamera`
      - `SPIFFS` library (comes with ESP32 board support)
+     - `AsyncTCP` library by `dvarrel`
 
 2. **Set Up WiFi:**
    - Open the sketch file (`ESP32_SPIFFS_Web_Server.ino`).
